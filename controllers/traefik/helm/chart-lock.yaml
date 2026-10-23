@@ -1,0 +1,13 @@
+# This file is intentionally committed. It records the exact chart selected
+# during discovery so a reviewer can reproduce the deployment.
+chart:
+  repository_name: traefik
+  repository_url: https://traefik.github.io/charts
+  name: traefik/traefik
+  version: 42.1.3
+  app_version: v3.7.16
+
+selection:
+  method: helm search repo traefik/traefik --versions
+  reason: Latest chart version observed during Project 03 chart discovery.
+  policy: Never use an unpinned chart version for this project.
